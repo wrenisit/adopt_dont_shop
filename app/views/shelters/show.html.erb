@@ -3,4 +3,5 @@
   <h2><%= @shelter.city %></h2>
   <h2><%= @shelter.state %></h2>
   <h2><%= @shelter.zip %></h2>
-  
+<%= button_to 'Update', "/shelters/#{@shelter.id}/edit", method: :get %>
+<%= button_to 'Delete Shelter', "/shelters/#{@shelter.id}", method: :delete %>
