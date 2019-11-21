@@ -189,8 +189,11 @@
         1,
         1,
         1,
+        1,
         null,
         1,
+        1,
+        null,
         null
       ],
       "/Users/wren/turing/2projects/adopt_dont_shop/app/helpers/application_helper.rb": [
@@ -216,6 +219,15 @@
       "/Users/wren/turing/2projects/adopt_dont_shop/app/controllers/pets_controller.rb": [
         1,
         1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
         1,
         null,
         null
@@ -226,6 +238,6 @@
         null
       ]
     },
-    "timestamp": 1574371667
+    "timestamp": 1574375997
   }
 }
