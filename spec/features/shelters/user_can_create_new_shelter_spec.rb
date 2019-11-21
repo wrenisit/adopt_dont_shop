@@ -8,7 +8,8 @@ RSpec.describe "shelter create page", type: :feature do
     fill_in "City", with: "Austin"
     fill_in "State", with: "TX"
     fill_in "Zip", with: "78704"
-
-    expect(page).to have_content(form)
+    click_on 'Submit'
+    expect(current_path).to eq('/shelters')
+    expect(page).to have_content("Austin Corgy Rescue")
   end
 end
