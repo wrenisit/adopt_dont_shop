@@ -1,4 +1,7 @@
 <h1>All Pets</h1>
+<% if @shelter %>
+  <%= link_to 'Add A Pet', "/shelters/#{@shelter.id}/pets/new" %>
+<% end %>
 
 <% @pets.each do |pet| %>
   <%= image_tag(pet.image) %>

@@ -14,6 +14,10 @@ RSpec.describe "see a show page" do
     expect(page).to have_content("Denver Dog Rescue")
     expect(page).to have_css("img[src*='#{pet_1.image}']")
     expect(page).to have_content("adoptable")
+
+    expect(page).to_not have_content("George")
+    expect(page).to_not have_content("5")
+    expect(page).to_not have_css("img[src*='#{pet_2.image}']")
   end
 end
 
