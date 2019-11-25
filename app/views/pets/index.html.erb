@@ -10,5 +10,6 @@
   <p> <%= pet.sex %> </p>
   <p> <%= pet.shelter.name %> </p>
   <%= button_to 'Update Pet Info', "/pets/#{pet.id}/edit", method: :get %>
+  <%= button_to 'Delete', "/pets/#{pet.id}", method: :delete %>
 
 <% end %>
