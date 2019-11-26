@@ -3,8 +3,7 @@
   <p> <%= @pet.age %> </p>
   <p> <%= @pet.sex %> </p>
   <p> <%= @pet.description %> </p>
-  <p> <%= @pet.shelter.name %></p>
+  <p><%= link_to "#{@pet.shelter.name}", "/shelters/#{@pet.shelter_id}" %></p>
   <p> <%= @pet.adopted %> </p>
   <%= button_to 'Update', "/pets/#{@pet.id}/edit", method: :get %>
   <%= button_to 'Delete', "/pets/#{@pet.id}", method: :delete %>
-  
