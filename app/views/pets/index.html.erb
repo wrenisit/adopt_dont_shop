@@ -1,4 +1,5 @@
 <h1>All Pets</h1>
+<h2><%= link_to "Shelter Index", '/shelters' %></h2>
 <% if @shelter %>
   <%= link_to 'Add A Pet', "/shelters/#{@shelter.id}/pets/new" %>
 <% end %>
