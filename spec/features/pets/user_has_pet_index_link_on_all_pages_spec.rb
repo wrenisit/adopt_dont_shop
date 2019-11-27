@@ -16,6 +16,5 @@ RSpec.describe "pet index link" do
     visit "/pets/#{pet_1.id}/edit"
     click_link "Pet Index"
     expect(current_path).to eq('/pets')
-
   end
 end

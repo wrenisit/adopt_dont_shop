@@ -32,7 +32,3 @@ RSpec.describe "user can click button to get to shelter edit page" do
     expect(page).to_not have_content("80121")
   end
 end
-    # When I visit the shelter index page
-    # Next to every shelter, I see a link to edit that shelter's info
-    # When I click the link
-    # I should be taken to that shelters edit page where I can update its information just like in User Story 5

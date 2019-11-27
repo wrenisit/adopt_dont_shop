@@ -14,6 +14,5 @@ RSpec.describe "shelter show page", type: :feature do
     expect(page).to have_content(shelter_1.zip)
 
     expect(page).to_not have_content(shelter_2.name)
-
   end
 end

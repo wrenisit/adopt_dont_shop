@@ -21,6 +21,5 @@ RSpec.describe "user can delete pet" do
     expect(page).to_not have_content("2")
     expect(page).to_not have_content("Male")
     expect(page).to_not have_css("img[src*='#{pet_1.image}']")
-
   end
 end

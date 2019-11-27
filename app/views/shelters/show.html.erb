@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: rgb(241, 140, 104);
+  color: white;
+}
+</style>
+</head>
+<body>
 <h2><%= link_to "Pet Index", '/pets' %></h2>
 
 <h1><%= @shelter.name %></h1>
@@ -5,5 +16,7 @@
   <h2><%= @shelter.city %></h2>
   <h2><%= @shelter.state %></h2>
   <h2><%= @shelter.zip %></h2>
+  <h2><%= link_to "#{@shelter.name}'s Pets", "/shelters/#{@shelter.id}/pets" %></h2>
 <%= button_to 'Update', "/shelters/#{@shelter.id}/edit", method: :get %>
 <%= button_to 'Delete Shelter', "/shelters/#{@shelter.id}", method: :delete %>
+</body>

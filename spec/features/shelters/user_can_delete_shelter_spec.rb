@@ -14,13 +14,3 @@ RSpec.describe "delete a shelter" do
     expect(page).to_not have_content("123 South Street")
   end
 end
-
-
-
-# As a visitor
-# When I visit a shelter show page
-# Then I see a link to delete the shelter
-# When I click the link
-# Then a 'DELETE' request is sent to '/shelters/:id',
-# the shelter is deleted,
-# and I am redirected to the shelter index page where I no longer see this shelter

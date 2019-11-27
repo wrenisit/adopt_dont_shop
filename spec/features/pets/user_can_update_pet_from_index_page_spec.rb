@@ -20,11 +20,5 @@ RSpec.describe "update pet from index" do
     expect(page).to have_content("9")
     expect(page).to have_content("Male")
     expect(page).to have_css("img[src*='#{pet_3.image}']")
-
   end
 end
-
-# When I visit the pets index page or a shelter pets index page
-# Next to every pet, I see a link to edit that pet's info
-# When I click the link
-# I should be taken to that pets edit page where I can update its information just like in User Story 11

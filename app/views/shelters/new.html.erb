@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: rgb(241, 140, 104);
+  color: white;
+}
+</style>
+</head>
+<body>
 <%= form_tag '/shelters' do %>
   <h1>Add a Shelter</h1>
   <%= label_tag :name %>
@@ -12,3 +23,4 @@
   <%= text_field_tag :zip %><br>
   <%= submit_tag 'Submit'%>
 <% end %>
+</body>

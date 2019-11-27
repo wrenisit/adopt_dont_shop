@@ -31,6 +31,3 @@ RSpec.describe "shelter index links" do
     expect(page).to have_content("#{shelter_1.name}")
   end
 end
-
-# When I visit any page on the site
-# Then I see a link at the top of the page that takes me to the Shelter Index

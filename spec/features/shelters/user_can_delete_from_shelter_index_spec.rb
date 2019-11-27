@@ -9,12 +9,5 @@ RSpec.describe "user can use button on shelter index page to delete shelter" do
     click_link "Delete"
     expect(current_path).to eq('/shelters')
     expect(page).to_not have_content("Denver Dog Rescue")
-
   end
 end
-
-
-# When I visit the shelter index page
-# Next to every shelter, I see a link to delete that shelter
-# When I click the link
-# I am returned to the Shelter Index Page where I no longer see that shelter

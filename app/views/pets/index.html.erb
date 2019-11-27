@@ -1,16 +1,28 @@
-<h1>All Pets</h1>
-<h2><%= link_to "Shelter Index", '/shelters' %></h2>
-<% if @shelter %>
-  <%= link_to 'Add A Pet', "/shelters/#{@shelter.id}/pets/new" %>
-<% end %>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: rgb(99, 214, 227);
+  color: white;
+}
+</style>
+</head>
+<body>
+  <h1>All Pets</h1>
+  <h2><%= link_to "Shelter Index", '/shelters' %></h2>
+  <% if @shelter %>
+    <%= link_to 'Add A Pet', "/shelters/#{@shelter.id}/pets/new" %>
+  <% end %>
 
-<% @pets.each do |pet| %>
-  <%= image_tag(pet.image) %>
-  <h2><%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h2>
-  <p> <%= pet.age %> </p>
-  <p> <%= pet.sex %> </p>
-  <p><%= link_to "#{pet.shelter.name}", "/shelters/#{pet.shelter_id}" %></p>
-  <%= button_to 'Update Pet Info', "/pets/#{pet.id}/edit", method: :get %>
-  <%= button_to 'Delete', "/pets/#{pet.id}", method: :delete %>
+  <% @pets.each do |pet| %>
+    <%= image_tag(pet.image) %>
+    <h2><%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h2>
+    <p> <%= pet.age %> </p>
+    <p> <%= pet.sex %> </p>
+    <p><%= link_to "#{pet.shelter.name}", "/shelters/#{pet.shelter_id}" %></p>
+    <%= button_to 'Update Pet Info', "/pets/#{pet.id}/edit", method: :get %>
+    <%= button_to 'Delete', "/pets/#{pet.id}", method: :delete %>
 
-<% end %>
+  <% end %>
+</body>
