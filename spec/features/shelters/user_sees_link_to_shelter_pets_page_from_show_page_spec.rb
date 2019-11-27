@@ -8,10 +8,5 @@ RSpec.describe "see pets link in show page" do
     visit "/shelters/#{shelter_1.id}"
     click_link "#{shelter_1.name}'s Pets"
     expect(current_path).to eq("/shelters/#{shelter_1.id}/pets")
-    
-
   end
 end
-
-# When I visit a shelter show page ('/shelters/:id')
-# Then I see a link to take me to that shelter's pets page ('/shelters/:id/pets')

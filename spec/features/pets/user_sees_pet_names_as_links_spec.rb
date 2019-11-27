@@ -12,9 +12,6 @@ RSpec.describe "pet links" do
     visit "/shelters/#{shelter_1.id}/pets"
     click_link "#{pet_1.name}"
     expect(current_path).to eq("/pets/#{pet_1.id}")
-    
+
   end
 end
-
-# When I click on the name a pet anywhere on the site
-# Then that link takes me to that Pet's show page

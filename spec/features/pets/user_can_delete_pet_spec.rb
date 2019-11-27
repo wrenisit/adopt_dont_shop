@@ -18,13 +18,5 @@ RSpec.describe "delete a pet" do
     expect(page).to have_content("Ginny")
     expect(page).to have_content("3")
     expect(page).to have_content("Female")
-
   end
 end
-
-# When I visit a pet show page
-# Then I see a link to delete the pet
-# When I click the link
-# Then a 'DELETE' request is sent to '/pets/:id',
-# the pet is deleted,
-# and I am redirected to the pet index page where I no longer see this pet
